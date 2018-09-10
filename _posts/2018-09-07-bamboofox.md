@@ -6,13 +6,13 @@
 
 system('/bin/sh')
 
-![image-20180821100234389](https://ws1.sinaimg.cn/large/006tNbRwly1fv0wl3mm5dj30vs042gmo.jpg)
+![image-20180821100234389](http://maoshuu.oss-cn-beijing.aliyuncs.com/blog/2018-09-07-115441.jpg)
 
 
 
 泄露canary的值，以及与printf的偏移地址
 
-![image-20180821110549995](https://ws3.sinaimg.cn/large/006tNbRwly1fv0wl77h7gj30sw03qmxw.jpg)
+![image-20180821110549995](http://maoshuu.oss-cn-beijing.aliyuncs.com/blog/2018-09-07-115448.jpg)
 
 从0xffffd470开始，偏移为5
 

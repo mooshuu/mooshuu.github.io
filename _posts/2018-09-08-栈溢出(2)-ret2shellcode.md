@@ -43,7 +43,7 @@ tags:
 
 
 
-但是相比ret2text多了一个strncpy函数，这个函数的作用是把s中的内容拷贝到buf2中
+但是相比ret2text程序多了一个strncpy函数，这个函数的作用是把s中的内容拷贝到buf2中
 
 第一个参数为buf2为目的地址，&s为源地址，0x64u为buf2长度
 

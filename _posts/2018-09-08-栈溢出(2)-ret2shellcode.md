@@ -4,7 +4,7 @@ title:      ret2shellcode
 subtitle:   解题思路
 date:       2018-07-05
 author:     Mao
-header-img: img/post-bg-cook.jpg
+header-img: img/home-bg-geek.jpg
 catalog: true
 tags:
     - PWN

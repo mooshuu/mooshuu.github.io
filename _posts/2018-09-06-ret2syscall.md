@@ -33,6 +33,8 @@ tags:
 
 
 
+[下载程序](https://maoshuu.oss-cn-beijing.aliyuncs.com/elf/ret2syscall)
+
 
 
 ## 分析过程
@@ -148,5 +150,4 @@ int main(void)
 
 ## 总结
 
-
-
+注意静态编译和动态编译的区别

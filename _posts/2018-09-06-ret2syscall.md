@@ -2,7 +2,7 @@
 layout:     post
 title:      ret2syscall
 subtitle:   解题思路
-date:       2018-07-05
+date:       2018-07-10
 author:     Mao
 header-img: img/home-bg-geek.jpg
 catalog: true

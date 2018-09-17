@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      模版
+title:      stack_shellcode
 subtitle:   解题思路
 date:       2018-07-05
 author:     Mao
